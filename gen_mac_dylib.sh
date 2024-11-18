@@ -6,4 +6,5 @@ go build -buildmode=c-shared -o ./mac/libopenimsdk_arm64.dylib ./
 
 export GOARCH=amd64
 go build -buildmode=c-shared -o ./mac/libopenimsdk_amd64.dylib ./
+cd ./mac
 lipo -create -output libopenimsdk.dylib libopenimsdk_arm64.dylib libopenimsdk_amd64.dylib
