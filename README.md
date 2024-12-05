@@ -7,7 +7,7 @@ Based on the secondary closure of [openim-sdk-core](https://github.com/openimsdk
 1. runtime/cgo/cgo.go
    #cgo android LDFLAGS: -llog
    改为  
-    #cgo android LDFLAGS: -lhilog_ndk.z.so
+    #cgo android LDFLAGS: -lhilog_ndk.z
 
 2. runtime/cgo/gcc_android.c
 
