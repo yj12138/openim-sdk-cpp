@@ -26,7 +26,7 @@ set GOOS=linux
 set GOARCH=arm64
 set CXXFLAGS=--target=aarch64-linux-ohos %BASE_FLAGS%
 set CFLAGS=--target=aarch64-linux-ohos %BASE_FLAGS%
-set CC=%NDK_PATH%\llvm\bin\clang %CFLAGS% %BASE_FLAGS%
+set CC=%NDK_PATH%\llvm\bin\clang %CFLAGS% 
 set CXX=%NDK_PATH%\llvm\bin\clang++ %CFLAGS% %BASE_FLAGS%
 
 go build -buildmode=c-shared -tlsmodegd  -trimpath -ldflags="-s -w" -o %OUT_PATH%arm64-v8a\%SO_NAME%.so ./
@@ -36,7 +36,7 @@ set GOOS=android
 set GOARCH=amd64
 set CXXFLAGS=--target=x86_64-linux-ohos %BASE_FLAGS%
 set CFLAGS=--target=x86_64-linux-ohos %BASE_FLAGS%
-set CC=%NDK_PATH%\llvm\bin\clang %CFLAGS% %BASE_FLAGS%
+set CC=%NDK_PATH%\llvm\bin\clang %CFLAGS% 
 set CXX=%NDK_PATH%\llvm\bin\clang++ %CFLAGS% %BASE_FLAGS%
 
 @REM go build -x -v -buildmode=c-shared  -trimpath -ldflags="-s -w" -o %OUT_PATH%x86_64\%SO_NAME%.so ./
